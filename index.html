@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compass · Grade 8 Computing</title>
+  <meta name="description" content="Grade 8 Computing — topics, weekly plan, quizzes, assessments and personal progress tracker.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23234a7b'/%3E%3Ctext x='32' y='43' font-size='32' text-anchor='middle' fill='%23f0b27a' font-family='Georgia' font-weight='700'%3EC%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-logo">C</div>
+        <div><div class="brand-name" id="brandName">Compass</div><div class="brand-sub" id="brandSub">Grade 8 Computing</div></div>
+      </div>
+      <div class="year-box"><div class="lbl">Academic year</div><div class="val" id="yearVal"></div></div>
+      <div class="sem-toggle" id="semToggle"></div>
+      <div class="lbl nav-h">Workspace</div>
+      <nav class="menu" id="menu">
+        <a href="#home" data-r="home"><span class="k">H</span>Home</a>
+        <a href="#plan" data-r="plan"><span class="k">W</span>Weekly plan</a>
+        <a href="#calendar" data-r="calendar"><span class="k">A</span>Calendar &amp; assessments</a>
+        <a href="#resources" data-r="resources"><span class="k">R</span>Resources</a>
+        <a href="#results" data-r="results"><span class="k">G</span>My results <span class="pill">Tracker</span></a>
+        <a href="#help" data-r="help"><span class="k">?</span>Help</a>
+      </nav>
+      <div class="side-foot" id="sideFoot" title="Switch student / my data">
+        <div class="avatar" id="avatar">?</div>
+        <div><div class="who" id="whoName">Student</div><div class="role" id="whoRole">Student</div></div>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn hamburger" id="hamburger" aria-label="Open menu">☰</button>
+        <div class="crumb" id="crumb">Computing / Home</div>
+        <div class="goal"><div class="lbl">✦ Learning goal</div><div>Understand it, practise it, prove it — one topic at a time.</div></div>
+        <div class="top-actions">
+          <button class="icon-btn" id="syncBtn" title="Sync status" aria-label="Sync status">⟳<span class="dot" id="syncDot" hidden></span></button>
+        </div>
+      </header>
+      <main class="content" id="view"></main>
+    </div>
+  </div>
+  <div class="tooltip" id="tooltip"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/content-s1.js"></script>
+  <script src="js/content-s2.js"></script>
+  <script src="js/bank-programming.js"></script>
+  <script src="js/bank-systems.js"></script>
+  <script src="js/bank-data.js"></script>
+  <script src="js/generators.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
