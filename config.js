@@ -17,7 +17,7 @@ window.CONFIG = {
 
   /* Paste your Google Apps Script Web App URL here (see README.md).
      Leave as "" to save results only in the student's browser. */
-  googleSheetsUrl: "",
+  googleSheetsUrl: "https://script.google.com/a/macros/stu.vinschool.edu.vn/s/AKfycbzBck5ZjcaEucGoJ1Kj3ol2-K35RP1Z5W8OMjZ29wq31h-auoFVkd5EiEr5r1THG9Pu/exec",
 
   passMark: 70,             // % needed to count a topic as "passed"
   secondsPerQuestion: 45,   // timer for every quiz question
